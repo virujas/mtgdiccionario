@@ -32,3 +32,7 @@ ul{
   text-decoration: none;
   list-style: none;
 }
+
+li{
+  padding: 10px 0px 5px 0px
+}

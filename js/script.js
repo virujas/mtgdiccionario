@@ -199,7 +199,8 @@ const filtrar = ()=>{
         if(nombre.indexOf(texto) !== -1){
             resultado.innerHTML += `
             <li>
-            ${palabra.nombre} : ${palabra.significado} - ${palabra.contexto}
+            <h3>${palabra.nombre}</h3> ${palabra.significado} - ${palabra.contexto}
+            <hr>
             </li>
             `
         }
