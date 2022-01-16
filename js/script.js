@@ -1,6 +1,7 @@
 const formulario = document.querySelector('#formulario')
 const boton = document.querySelector('#boton')
 const resultado = document.querySelector('#resultado')
+const mostrarTodas = document.getElementById ("btnTodas")
 
 const palabras = [
     {nombre: "Add", significado: "agregar", contexto: "Contexto: nada por ahora"},
@@ -182,14 +183,6 @@ const palabras = [
     {nombre: "¿Como usar el diccionario?", significado: "Solo escribe la palabra que buscas y encontraras su significado, que provoca en el juego y un simple contexto", contexto: ""},
 ]
 
-// palabras.forEach((palabrasArray) => {
-//     resultado.innerHTML += `
-//     <li>
-//      ${palabrasArray.nombre} : ${palabrasArray.significado} - ${palabrasArray.contexto}
-//     </li>
-//     `
-
-// });
 
 const filtrar = ()=>{
     resultado.innerHTML = ''
@@ -198,20 +191,7 @@ const filtrar = ()=>{
     for(let palabra of palabras){
         let nombre = palabra.nombre.toLowerCase()
         if(nombre.indexOf(texto) !== -1){
-            resultado.innerHTML =
-//             `
-//            <div class="card cardEdit">
-//   <div class="card-header cardHeader" style="">
-//     <p class="textStyle">${palabra.nombre}</p> 
-//   </div>
-//   <div class="card-body">
-//     <blockquote class="blockquote mb-0">
-//       <p>${palabra.significado}</p>
-//       <footer class="blockquote-footer">${palabra.contexto}</cite>
-//     </blockquote>
-//   </div>
-//     </div>
-// `
+            resultado.innerHTML +=
 `
 <div class="container" style="margin-top:50px;">
 <div class="card-frame">
@@ -259,6 +239,19 @@ const filtrar = ()=>{
             `
     }
 }
+
+mostrarTodas.addEventListener('click', () => {
+  resultado.innerHTML = ''
+  palabras.forEach((palabra) => {
+        resultado.innerHTML +=
+            `
+            <li>
+            <h3>${palabra.nombre}</h3> ${palabra.significado} - ${palabra.contexto}
+            <hr>
+            </li>
+`
+})
+})
 
 boton.addEventListener('click', filtrar)
 formulario.addEventListener('keyup', filtrar)
