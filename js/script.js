@@ -179,6 +179,7 @@ const palabras = [
     {nombre: "Whenever", significado: "siempre que", contexto: "Contexto: nada por ahora"},
     {nombre: "Wither", significado: "debilitar", contexto: "Contexto: nada por ahora"},
     {nombre: "Would be", significado: "fuera a ser", contexto: "Contexto: nada por ahora"},
+    {nombre: "¿Como usar el diccionario?", significado: "Solo escribe la palabra que buscas y encontraras su significado, que provoca en el juego y un simple contexto", contexto: ""},
 ]
 
 // palabras.forEach((palabrasArray) => {
@@ -197,7 +198,7 @@ const filtrar = ()=>{
     for(let palabra of palabras){
         let nombre = palabra.nombre.toLowerCase()
         if(nombre.indexOf(texto) !== -1){
-            resultado.innerHTML +=
+            resultado.innerHTML =
 //             `
 //            <div class="card cardEdit">
 //   <div class="card-header cardHeader" style="">
