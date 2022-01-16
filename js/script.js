@@ -214,18 +214,14 @@ const filtrar = ()=>{
 `
 <div class="container">
 <div class="card-frame">
-
-      
-      <div class="frame-type-line">
+        <div class="frame-type-line">
         <div class="type"><h1>${palabra.nombre}</h1></div>
-        <img class="manared" src="../assets/imagenes/mred.svg" alt="mana rojo">
-        <img class="managreen" src="../assets/imagenes/mgreen.svg" alt="mana verde">
-        <img class="manablue" src="../assets/imagenes/mblue.svg" alt="mana azul">
-        <img class="manawhite" src="../assets/imagenes/mwhite.svg" alt="mana blanco">
-        <img class="manablack" src="../assets/imagenes/mblack.svg" alt="mana negro">
-
+        <img class="manared" src="../assets/imagenes/mred.svg" alt="mana rojo"/>
+        <img class="managreen" src="../assets/imagenes/mgreen.svg" alt="mana verde"/>
+        <img class="manablue" src="../assets/imagenes/mblue.svg" alt="mana azul"/>
+        <img class="manawhite" src="../assets/imagenes/mwhite.svg" alt="mana blanco"/>
+        <img class="manablack" src="../assets/imagenes/mblack.svg" alt="mana negro"/>
       </div>
-
       <div class="frame-text-box">
         <p class="description ftb-inner-margin">${palabra.significado}
         </p>
@@ -235,7 +231,6 @@ const filtrar = ()=>{
         <p class="flavour-text">${palabra.contexto}
         </p>
         </div>
-
         <div class="frame-bottom-info inner-margin">
           <div class="fbi-left">
           </div>
