@@ -216,11 +216,11 @@ const filtrar = ()=>{
 <div class="card-frame">
         <div class="frame-type-line">
         <div class="type"><h1>${palabra.nombre}</h1></div>
-        <img class="manared" src="../assets/imagenes/mred.svg" alt="mana rojo"/>
-        <img class="managreen" src="../assets/imagenes/mgreen.svg" alt="mana verde"/>
-        <img class="manablue" src="../assets/imagenes/mblue.svg" alt="mana azul"/>
-        <img class="manawhite" src="../assets/imagenes/mwhite.svg" alt="mana blanco"/>
-        <img class="manablack" src="../assets/imagenes/mblack.svg" alt="mana negro"/>
+        <img class="manared" src="../assets/imagenes/mred.png" alt="mana rojo"/>
+        <img class="managreen" src="../assets/imagenes/mgreen.png" alt="mana verde"/>
+        <img class="manablue" src="../assets/imagenes/mblue.png" alt="mana azul"/>
+        <img class="manawhite" src="../assets/imagenes/mwhite.png" alt="mana blanco"/>
+        <img class="manablack" src="../assets/imagenes/mblack.png" alt="mana negro"/>
       </div>
       <div class="frame-text-box">
         <p class="description ftb-inner-margin">${palabra.significado}
