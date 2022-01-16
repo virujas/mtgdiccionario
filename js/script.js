@@ -218,11 +218,11 @@ const filtrar = ()=>{
       
       <div class="frame-type-line">
         <div class="type"><h1>${palabra.nombre}</h1></div>
-        <img class="manared" src="../assets/imagenes/mred.svg" id="set-icon" alt="icono de mana">
-        <img class="managreen" src="../assets/imagenes/mgreen.svg" id="set-icon" alt="icono de mana">
-        <img class="manablue" src="../assets/imagenes/mblue.svg" id="set-icon" alt="icono de mana">
-        <img class="manawhite" src="../assets/imagenes/mwhite.svg" id="set-icon" alt="icono de mana">
-        <img class="manablack" src="../assets/imagenes/mblack.svg" id="set-icon" alt="icono de mana">
+        <img class="manared" src="../assets/imagenes/mred.svg" alt="mana rojo">
+        <img class="managreen" src="../assets/imagenes/mgreen.svg" alt="mana verde">
+        <img class="manablue" src="../assets/imagenes/mblue.svg" alt="mana azul">
+        <img class="manawhite" src="../assets/imagenes/mwhite.svg" alt="mana blanco">
+        <img class="manablack" src="../assets/imagenes/mblack.svg" alt="mana negro">
 
       </div>
 
