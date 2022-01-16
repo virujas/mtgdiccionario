@@ -213,7 +213,7 @@ const filtrar = ()=>{
 //     </div>
 // `
 `
-<div class="container">
+<div class="container" style="margin-top:50px;">
 <div class="card-frame">
         <div class="frame-type-line">
         <div class="type"><h1>${palabra.nombre}</h1></div>
