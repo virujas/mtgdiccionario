@@ -231,10 +231,10 @@ const filtrar = ()=>{
         }
     }
     if(resultado.innerHTML == ''){
-        resultado.innerHTML += 
+        resultado.innerHTML = 
             `
-            <li style="margin-top:20px;font-size: 20px; color: black; font-weight:500;">
-            Escribe la palabra que desees buscar
+            <li style="margin-top:20px;font-size: 20px; color: white; font-weight:500;">
+            Palabra no encontrada
             </li>
             `
     }
@@ -246,7 +246,7 @@ mostrarTodas.addEventListener('click', () => {
   palabras.forEach((palabra) => {
         resultado.innerHTML +=
             `
-            <li>
+            <li style="color:white;">
             <h3>${palabra.nombre}</h3> ${palabra.significado} - ${palabra.contexto}
             <hr>
             </li>

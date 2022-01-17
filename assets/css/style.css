@@ -37,7 +37,8 @@ body{
   justify-content: center;
   min-height: 100vh;
   /* background: #ffffff; */
-  background-color: rgba(223, 198, 152, 0.89);
+  /* background-color: rgba(223, 198, 152, 0.89); */
+  background-color: rgba(0, 0, 0, 0.89);
   
 }
 
@@ -142,14 +143,14 @@ width: 10%
 .frame-header,
 .frame-type-line {
  background: 
- linear-gradient( 0deg, #f8e7a96b, #f8e7a96b ), 
+ linear-gradient( 0deg, #f8e7a9, #f8e7a9 ), 
  url(..//imagenes/bgtitle2.png); 
  background-size: cover;
  display: flex;
- width: 99.2%;
+ width: 99%;
  padding-top: 50px;
- margin-top: 10px;
- margin-left: 5px;
+ margin-top: 5px;
+ margin-left: 3px;
  margin-right: 5px;
  padding: 10px 0px 10px 0px;
  display: flex;
