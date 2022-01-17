@@ -233,8 +233,8 @@ const filtrar = ()=>{
     if(resultado.innerHTML == ''){
         resultado.innerHTML += 
             `
-            <li>
-            Escribe la palabra que deseees buscar
+            <li style="margin-top:20px;font-size: 20px; color: black; font-weight:500;">
+            Escribe la palabra que desees buscar
             </li>
             `
     }
