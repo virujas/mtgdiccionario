@@ -193,7 +193,7 @@ const filtrar = ()=>{
         if(texto === nombre){
             resultado.innerHTML +=
 `
-<div class="container" style="margin-top:50px;">
+<div class="container" style="margin-right: 0px;left: 0px;margin-left: 0px;right: 0px;">
 <div class="card-frame">
         <div class="frame-type-line">
         <div class="type"><h1>${palabra.nombre}</h1></div>
