@@ -1,8 +1,10 @@
+//declarando variables selectoras
 const formulario = document.querySelector('#formulario')
 const boton = document.querySelector('#boton')
 const resultado = document.querySelector('#resultado')
 const mostrarTodas = document.getElementById ("btnTodas")
 
+//array con palabras
 const palabras = [
     {nombre: "Add", significado: "agregar", contexto: "Contexto: nada por ahora"},
     {nombre: "Any", significado: "cualquier", contexto: "Contexto: nada por ahora"},
@@ -180,17 +182,15 @@ const palabras = [
     {nombre: "Whenever", significado: "siempre que", contexto: "Contexto: nada por ahora"},
     {nombre: "Wither", significado: "debilitar", contexto: "Contexto: nada por ahora"},
     {nombre: "Would be", significado: "fuera a ser", contexto: "Contexto: nada por ahora"},
-    {nombre: "¿Como usar el diccionario?", significado: "Solo escribe la palabra que buscas y encontraras su significado, que provoca en el juego y un simple contexto", contexto: ""},
 ]
 
-
+//filtrado inicial
 const filtrar = ()=>{
     resultado.innerHTML = ''
     const texto = formulario.value.toLowerCase()
-    
     for(let palabra of palabras){
         let nombre = palabra.nombre.toLowerCase()
-        if(nombre.indexOf(texto) !== -1){
+        if(texto === nombre){
             resultado.innerHTML +=
 `
 <div class="container" style="margin-top:50px;">
@@ -234,12 +234,13 @@ const filtrar = ()=>{
         resultado.innerHTML += 
             `
             <li>
-            Palabra no encontrada...
+            Escribe la palabra que deseees buscar
             </li>
             `
     }
 }
 
+//Recorriendo array para "ver todas"
 mostrarTodas.addEventListener('click', () => {
   resultado.innerHTML = ''
   palabras.forEach((palabra) => {
